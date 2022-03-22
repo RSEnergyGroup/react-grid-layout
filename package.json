@@ -1,6 +1,6 @@
 {
-  "name": "react-grid-layout",
-  "version": "0.16.6",
+  "name": "@enverus/react-grid-layout",
+  "version": "0.16.7",
   "description": "A draggable and resizable grid layout with responsive breakpoints, for React.",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "prepublishOnly": "make build",
     "validate": "npm ls",
     "flow": "flow",
-    "precommit": "lint-staged && make lint"
+    "precommit": "#lint-staged && make lint"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
     "lodash.isequal": "^4.0.0",
     "prop-types": "15.x",
     "react-draggable": "3.x",
-    "react-resizable": "github:RSEnergyGroup/react-resizable"
+    "react-resizable": "npm:@enverus/react-resizable@^1.8.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -81,7 +81,7 @@
     "webpack-dev-server": "^3.1.11"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://pkgs.dev.azure.com/navport/prism/_packaging/prism/npm/registry/"
   },
   "jest": {
     "testMatch": [
